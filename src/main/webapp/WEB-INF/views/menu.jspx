@@ -40,5 +40,17 @@
             <menu:item id="i_shirtformat_new" messageCode="global_menu_new" url="/shirtformats?form" z="9+y1quuIh+oTIjIC1VZ2gv2UsI4="/>
             <menu:item id="i_shirtformat_list" messageCode="global_menu_list" url="/shirtformats?page=1&amp;size=${empty param.size ? 10 : param.size}" z="6Bn9iOXToUoFYu1a24qDdWZ13f0="/>
         </menu:category>
+        <menu:category id="c_registeractivity" z="HLpTFAkCvUqb5PYmvMWKMOpYKbo=">
+            <menu:item id="i_registeractivity_new" messageCode="global_menu_new" url="/registeractivitys?form" z="AjHlkco+3V5tPGDtbaH0BzVMMN8="/>
+            <menu:item id="i_registeractivity_list" messageCode="global_menu_list" url="/registeractivitys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ONj3GSAEHFK/l/rpzkghgVm0+20="/>
+        </menu:category>
+        <menu:category id="c_activity" z="NF6PmQkAyo1JgYYtjuLuGgtZu1o=">
+            <menu:item id="i_activity_new" messageCode="global_menu_new" url="/activitys?form" z="humNnazx/vh/qV9QiaaPFxfrRKQ="/>
+            <menu:item id="i_activity_list" messageCode="global_menu_list" url="/activitys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Xp5og2rY8Oyevfsbh0NHJCrRUu4="/>
+        </menu:category>
+        <menu:category id="c_activitydetail" z="IOkVTxZMvaJ52HlFxD5y5/Mu92Y=">
+            <menu:item id="i_activitydetail_new" messageCode="global_menu_new" url="/activitydetails?form" z="8n5p1JCsPxbNZMnOSHiRqN3Bulc="/>
+            <menu:item id="i_activitydetail_list" messageCode="global_menu_list" url="/activitydetails?page=1&amp;size=${empty param.size ? 10 : param.size}" z="aUJHQEoJ7asIlof37X0K419zQag="/>
+        </menu:category>
     </menu:menu>
 </div>
