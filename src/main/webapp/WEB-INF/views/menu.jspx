@@ -40,5 +40,13 @@
             <menu:item id="i_activitydetail_new" messageCode="global_menu_new" url="/activitydetails?form" z="8n5p1JCsPxbNZMnOSHiRqN3Bulc="/>
             <menu:item id="i_activitydetail_list" messageCode="global_menu_list" url="/activitydetails?page=1&amp;size=${empty param.size ? 10 : param.size}" z="aUJHQEoJ7asIlof37X0K419zQag="/>
         </menu:category>
+        <menu:category id="c_ordershirt" z="J4DQqon6nY5uaxY7nckBU+IG+1Y=">
+            <menu:item id="i_ordershirt_new" messageCode="global_menu_new" url="/ordershirts?form" z="xwnOapSaK4bTeCmBD4lLs5MQ8B8="/>
+            <menu:item id="i_ordershirt_list" messageCode="global_menu_list" url="/ordershirts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="DxcZvzGcm2FjvBRP/KUQaHgkfwc="/>
+        </menu:category>
+        <menu:category id="c_shirtformat" z="i3uT2R4txoarg4d9gy1cuPObGnQ=">
+            <menu:item id="i_shirtformat_new" messageCode="global_menu_new" url="/shirtformats?form" z="9+y1quuIh+oTIjIC1VZ2gv2UsI4="/>
+            <menu:item id="i_shirtformat_list" messageCode="global_menu_list" url="/shirtformats?page=1&amp;size=${empty param.size ? 10 : param.size}" z="6Bn9iOXToUoFYu1a24qDdWZ13f0="/>
+        </menu:category>
     </menu:menu>
 </div>
