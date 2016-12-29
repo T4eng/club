@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_team13_club_domain_Classify" items="${classifys}" z="KUSPyEVeZRSuxYHaI9VyVLo3iNo=">
+        <table:table data="${classifys}" id="l_com_team13_club_domain_Classify" path="/classifys" z="7PuVMHUexcUqx4XMsrQnI/w9GvU=">
+            <table:column id="c_com_team13_club_domain_Classify_classify_id" property="classify_id" z="JX2TPFdznQGqi1Gzw7Q/H2OmxPw="/>
+            <table:column id="c_com_team13_club_domain_Classify_Types" property="types" z="Qc4m4+3aQWwa1CAnWjocal5pMpU="/>
+            <table:column id="c_com_team13_club_domain_Classify_List" property="list" z="xiwoN37qQvrLQ1yzXDu02br/kaU="/>
+        </table:table>
+    </page:list>
+</div>

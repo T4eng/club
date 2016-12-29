@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_team13_club_domain_Classify" object="${classify}" path="/classifys" z="infMu6NnfGv9UJOXe7XVEjPQTkI=">
+        <field:display field="classify_id" id="s_com_team13_club_domain_Classify_classify_id" object="${classify}" z="Piy+qqNDNgSs39gd/NxbNylrC8Q="/>
+        <field:display field="types" id="s_com_team13_club_domain_Classify_Types" object="${classify}" z="iqsI0oonEmpSjq1j+ZkGelK7juw="/>
+        <field:display field="list" id="s_com_team13_club_domain_Classify_List" object="${classify}" z="A0l15JK8ibJb4yISr4PxUkFe2oI="/>
+    </page:show>
+</div>

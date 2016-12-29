@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="clubtypes/list">
+        <put-attribute name="body" value="/WEB-INF/views/clubtypes/list.jspx"/>
+    </definition>
+<definition extends="default" name="clubtypes/show">
+        <put-attribute name="body" value="/WEB-INF/views/clubtypes/show.jspx"/>
+    </definition>
+<definition extends="default" name="clubtypes/create">
+        <put-attribute name="body" value="/WEB-INF/views/clubtypes/create.jspx"/>
+    </definition>
+<definition extends="default" name="clubtypes/update">
+        <put-attribute name="body" value="/WEB-INF/views/clubtypes/update.jspx"/>
+    </definition>
+</tiles-definitions>
