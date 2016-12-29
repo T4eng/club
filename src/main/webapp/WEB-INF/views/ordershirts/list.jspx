@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_team13_club_domain_Ordershirt" items="${ordershirts}" z="GFxPglBXPP8xTI9MWvaeFQUKFsY=">
+        <table:table data="${ordershirts}" id="l_com_team13_club_domain_Ordershirt" path="/ordershirts" z="7G/G8RylPLVcgERfjSGzTaqNMe4=">
+            <table:column id="c_com_team13_club_domain_Ordershirt_members" property="members" z="20bhHxod0cDXCvlbpsstkgCGyOI="/>
+            <table:column id="c_com_team13_club_domain_Ordershirt_sizes" property="sizes" z="Mvl92kWRwnXcXKTYLlB2QSL5spc="/>
+            <table:column id="c_com_team13_club_domain_Ordershirt_amount" property="amount" z="4dgxah2G60ljeRwiQ0HAJeoiWCI="/>
+        </table:table>
+    </page:list>
+</div>
