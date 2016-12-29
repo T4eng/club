@@ -15,5 +15,22 @@
             <menu:item id="i_club_new" messageCode="global_menu_new" url="/clubs?form" z="agWYiqdA4EaGmWRv08W3oha6jYM="/>
             <menu:item id="i_club_list" messageCode="global_menu_list" url="/clubs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nUDkLDOnt9Aw6z70dyxyv1SGj9U="/>
         </menu:category>
+        <menu:category id="c_purchaseequipment" z="Y0a+uis+Fc7HOuxxkvSdACXBhkc=">
+            <menu:item id="i_purchaseequipment_new" messageCode="global_menu_new" url="/purchaseequipments?form" z="LWVpIQ3SPuFSmQDmz7we25xO70U="/>
+            <menu:item id="i_purchaseequipment_list" messageCode="global_menu_list" url="/purchaseequipments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/8wI4P40ImDY8ONpy6+O+z8wN5A="/>
+            <menu:item id="fi_purchaseequipment_slipidlike" messageCode="global_menu_find" url="/purchaseequipments?find=BySlipidLike&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="OJifkVQwBMQxfOBOz/GAZkohtOI="/>
+        </menu:category>
+        <menu:category id="c_equipmentlist" z="6CE3/GgZYeuQuvWKbpRy/cs7rSA=">
+            <menu:item id="i_equipmentlist_new" messageCode="global_menu_new" url="/equipmentlists?form" z="v3J5Mbgglw0UCD5dRqWUUEodBQY="/>
+            <menu:item id="i_equipmentlist_list" messageCode="global_menu_list" url="/equipmentlists?page=1&amp;size=${empty param.size ? 10 : param.size}" z="qKnoaZy2/haBqs/9YhBrn+KyCBw="/>
+        </menu:category>
+        <menu:category id="c_major" z="8ZK5FH13E0cOw+AtqfDxEOXxVZ0=">
+            <menu:item id="i_major_new" messageCode="global_menu_new" url="/majors?form" z="KpZzLvh2tms2AxGE4Gj5T9302hY="/>
+            <menu:item id="i_major_list" messageCode="global_menu_list" url="/majors?page=1&amp;size=${empty param.size ? 10 : param.size}" z="2KZkdM8qgb+fD1P0mlHdEOEbZH0="/>
+        </menu:category>
+        <menu:category id="c_members" z="5ZTRvhIfJMNalVA+t05HgnbNxg4=">
+            <menu:item id="i_members_new" messageCode="global_menu_new" url="/memberses?form" z="yUKriKj7Dfx2glt/YrzPlgssWfM="/>
+            <menu:item id="i_members_list" messageCode="global_menu_list" url="/memberses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="SEyTkI0/SuExpXLuDMK0gk7uILk="/>
+        </menu:category>
     </menu:menu>
 </div>

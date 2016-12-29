@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_team13_club_domain_Members" items="${memberses}" z="wZ+dkiP9H+ZZ/9Leza1G6BVYJVo=">
+        <table:table data="${memberses}" id="l_com_team13_club_domain_Members" path="/memberses" z="ImQNMEEaVcHnbPpLNU+hGtFrJAo=">
+            <table:column id="c_com_team13_club_domain_Members_Name" property="name" z="v0Uw3yeP/M5h9gzqaxUZpxL0viQ="/>
+            <table:column id="c_com_team13_club_domain_Members_IDMember" property="IDMember" z="fflZd5AnojkMOdsyI3wtt5LUJkA="/>
+            <table:column id="c_com_team13_club_domain_Members_Gender" property="gender" z="as0h0EthZsmm7j9RfykOfAb/YFU="/>
+            <table:column id="c_com_team13_club_domain_Members_Age" property="age" z="wdm3oZDMgVLSvEkOOq0WNTkyGhE="/>
+            <table:column id="c_com_team13_club_domain_Members_Major" property="major" z="LfziROVFSogP8EUffh/OXhy/mkY="/>
+            <table:column id="c_com_team13_club_domain_Members_Club" property="club" z="cGKGqGhZnoF6r9TRnOtWSg8ptzE="/>
+        </table:table>
+    </page:list>
+</div>

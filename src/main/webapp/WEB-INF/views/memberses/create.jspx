@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_team13_club_domain_Members" modelAttribute="members" path="/memberses" render="${empty dependencies}" z="qWWQsVmHw+Hq5CoerwWEeE4FOgg=">
+        <field:input field="Name" id="c_com_team13_club_domain_Members_Name" z="VPwZ9dZw7nQSFfulLNyqGRWFFJY="/>
+        <field:input field="IDMember" id="c_com_team13_club_domain_Members_IDMember" z="fqiAFrls+h28P3OPpOFzzvP7hDc="/>
+        <field:select field="Gender" id="c_com_team13_club_domain_Members_Gender" items="${genders}" path="genders" z="0BqoUG8EAh/e2t1A1ZN/QZswX78="/>
+        <field:input field="Age" id="c_com_team13_club_domain_Members_Age" validationMessageCode="field_invalid_integer" z="m2fDoTjwFROz9nKd3N/ZBxxD0q4="/>
+        <field:select field="Major" id="c_com_team13_club_domain_Members_Major" itemValue="id" items="${majors}" path="/majors" z="aZLERSMqO5fAJqwGuYuPt4YM5R0="/>
+        <field:select field="Club" id="c_com_team13_club_domain_Members_Club" itemValue="id" items="${clubs}" multiple="true" path="/clubs" z="ZAnd6k9n//CfzIkxVV5lzjoRLyE="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_team13_club_domain_Members" render="${not empty dependencies}" z="ukcJMI+8VynMmbKGthRr7CtLmkQ="/>
+</div>
