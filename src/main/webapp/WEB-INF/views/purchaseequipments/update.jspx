@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_mycompany_com_sut_PurchaseEquipment" modelAttribute="purchaseEquipment" path="/purchaseequipments" versionField="Version" z="Atn5+Ku8l6nlopyAU/9QwiY41tk=">
+        <field:input field="slipid" id="c_mycompany_com_sut_PurchaseEquipment_slipid" z="oRuSzQaDOQtB7xEyOxVHkcN0HME="/>
+        <field:select field="members" id="c_mycompany_com_sut_PurchaseEquipment_members" itemValue="id" items="${memberses}" path="/memberses" z="pCQ36C+98tlxWTmWnkejRSrRz7I="/>
+        <field:select field="equipmentList" id="c_mycompany_com_sut_PurchaseEquipment_equipmentList" itemValue="id" items="${equipmentlists}" multiple="true" path="/equipmentlists" z="k/kGcbZmZlB1igrfeRuShj5VO/4="/>
+        <field:datetime dateTimePattern="${purchaseEquipment_dates_date_format}" field="dates" id="c_mycompany_com_sut_PurchaseEquipment_dates" z="hDkPxvgJLboaIBcEXDfCKuWsmDI="/>
+    </form:update>
+</div>

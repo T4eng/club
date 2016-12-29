@@ -1,10 +1,11 @@
-package com.sut.g13.domain;
+package mycompany.com.sut.web;
+import mycompany.com.sut.Members;
 import org.springframework.roo.addon.web.mvc.controller.scaffold.RooWebScaffold;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("/registermembers")
+@RequestMapping("/memberses")
 @Controller
-@RooWebScaffold(path = "registermembers", formBackingObject = RegisterMember.class)
-public class RegisterMemberController {
+@RooWebScaffold(path = "memberses", formBackingObject = Members.class)
+public class MembersController {
 }

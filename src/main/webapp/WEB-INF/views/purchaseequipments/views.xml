@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="purchaseequipments/list">
+        <put-attribute name="body" value="/WEB-INF/views/purchaseequipments/list.jspx"/>
+    </definition>
+<definition extends="default" name="purchaseequipments/show">
+        <put-attribute name="body" value="/WEB-INF/views/purchaseequipments/show.jspx"/>
+    </definition>
+<definition extends="default" name="purchaseequipments/create">
+        <put-attribute name="body" value="/WEB-INF/views/purchaseequipments/create.jspx"/>
+    </definition>
+<definition extends="default" name="purchaseequipments/update">
+        <put-attribute name="body" value="/WEB-INF/views/purchaseequipments/update.jspx"/>
+    </definition>
+<definition extends="default" name="purchaseequipments/findPurchaseEquipmentsBySlipidLike">
+        <put-attribute name="body" value="/WEB-INF/views/purchaseequipments/findPurchaseEquipmentsBySlipidLike.jspx"/>
+    </definition>
+</tiles-definitions>

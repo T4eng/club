@@ -1,4 +1,4 @@
-package com.sut.g13.domain;
+package mycompany.com.sut.web;
 
 import org.springframework.format.FormatterRegistry;
 import org.springframework.format.support.FormattingConversionServiceFactoryBean;

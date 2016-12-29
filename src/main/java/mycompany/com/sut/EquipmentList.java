@@ -1,4 +1,4 @@
-package com.sut.g13;
+package mycompany.com.sut;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
@@ -6,5 +6,17 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
-public class PurchaseEquipment {
+public class EquipmentList {
+
+    /**
+     */
+    private String ename;
+
+    /**
+     */
+    private Integer amount;
+
+    /**
+     */
+    private Float price;
 }

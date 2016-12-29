@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_mycompany_com_sut_PurchaseEquipment" object="${purchaseequipment}" path="/purchaseequipments" z="4WP6JMqusTRTA73+UHbEaZpiSWY=">
+        <field:display field="slipid" id="s_mycompany_com_sut_PurchaseEquipment_slipid" object="${purchaseequipment}" z="xSsueOy+tw1w7Kr6eR2kXFnsrqA="/>
+        <field:display field="members" id="s_mycompany_com_sut_PurchaseEquipment_members" object="${purchaseequipment}" z="6RK30PefOfnH1iUZmRr/Zj3FChQ="/>
+        <field:display field="equipmentList" id="s_mycompany_com_sut_PurchaseEquipment_equipmentList" object="${purchaseequipment}" z="HWmY3EjB/yCwUF5pjAJ7t5KGlu0="/>
+        <field:display calendar="true" dateTimePattern="${purchaseEquipment_dates_date_format}" field="dates" id="s_mycompany_com_sut_PurchaseEquipment_dates" object="${purchaseequipment}" z="Wn4uJ1ejrcvQ+zuiATf0nKztmp0="/>
+    </page:show>
+</div>
