@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_team13_club_domain_Registeractivity" modelAttribute="registeractivity" path="/registeractivitys" render="${empty dependencies}" z="R2jYbMsBO4QCR91jJdZgY54NZ0s=">
+        <field:select field="MemberName" id="c_com_team13_club_domain_Registeractivity_MemberName" itemValue="id" items="${memberses}" path="/memberses" z="9oS7k0I75PVW/RKRZ56lOPT1rtI="/>
+        <field:datetime dateTimePattern="${registeractivity_datetimes_date_format}" field="DateTimes" id="c_com_team13_club_domain_Registeractivity_DateTimes" z="t8EfHVYQo0roAK/Ku2QkkdGKJ9c="/>
+        <field:input field="Times" id="c_com_team13_club_domain_Registeractivity_Times" required="true" z="3zIvXK81bp7gIxHCjIFjfLGiES4="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_team13_club_domain_Registeractivity" render="${not empty dependencies}" z="mMzYiHaOMziT+f0cHLpfFbIBeJM="/>
+</div>

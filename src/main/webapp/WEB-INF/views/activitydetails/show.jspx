@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_team13_club_domain_Activitydetail" object="${activitydetail}" path="/activitydetails" z="FpLYnlaqRTdrtd97AqL4+vY+hkE=">
+        <field:display field="activity" id="s_com_team13_club_domain_Activitydetail_Activity" object="${activitydetail}" z="z5goZl32dAyz+T5zWIp/vuO97zk="/>
+        <field:display field="detail" id="s_com_team13_club_domain_Activitydetail_Detail" object="${activitydetail}" z="gx30adRrWGnkiDPlJIQ4tcY2qcY="/>
+        <field:display calendar="true" dateTimePattern="${activitydetail_datetimes_date_format}" field="dateTimes" id="s_com_team13_club_domain_Activitydetail_DateTimes" object="${activitydetail}" z="mOovUmxxrMzp5LmqRaRwyu/PmgY="/>
+        <field:display field="times" id="s_com_team13_club_domain_Activitydetail_Times" object="${activitydetail}" z="n2ZFWYojDrbMdj9KLSaM7+FYLKI="/>
+        <field:display field="budget" id="s_com_team13_club_domain_Activitydetail_Budget" object="${activitydetail}" z="Czt4lpccoPQ3CpbxTlC5ARRcqtA="/>
+    </page:show>
+</div>
