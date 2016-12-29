@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="loneequipments/list">
+        <put-attribute name="body" value="/WEB-INF/views/loneequipments/list.jspx"/>
+    </definition>
+<definition extends="default" name="loneequipments/show">
+        <put-attribute name="body" value="/WEB-INF/views/loneequipments/show.jspx"/>
+    </definition>
+<definition extends="default" name="loneequipments/create">
+        <put-attribute name="body" value="/WEB-INF/views/loneequipments/create.jspx"/>
+    </definition>
+<definition extends="default" name="loneequipments/update">
+        <put-attribute name="body" value="/WEB-INF/views/loneequipments/update.jspx"/>
+    </definition>
+</tiles-definitions>

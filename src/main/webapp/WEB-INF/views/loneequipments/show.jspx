@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_team13_club_domain_Loneequipment" object="${loneequipment}" path="/loneequipments" z="bw1pUqAsQWOCsD5kXf7U7IdfJYk=">
+        <field:display field="members" id="s_com_team13_club_domain_Loneequipment_members" object="${loneequipment}" z="iH3f5zv6XHcbiKLliRYaGk4iMts="/>
+        <field:display field="equiment" id="s_com_team13_club_domain_Loneequipment_Equiment" object="${loneequipment}" z="LlDjMwcw/2uFMPHenL09EbVyRi8="/>
+        <field:display field="amount" id="s_com_team13_club_domain_Loneequipment_amount" object="${loneequipment}" z="GowvES5Ys8AsspzN65nECje90XU="/>
+        <field:display date="true" dateTimePattern="${loneequipment_dates_date_format}" field="dates" id="s_com_team13_club_domain_Loneequipment_dates" object="${loneequipment}" z="2qXN/j9oytG2pq0Vp8Ni39/nUo4="/>
+        <field:display date="true" dateTimePattern="${loneequipment_returndates_date_format}" field="returndates" id="s_com_team13_club_domain_Loneequipment_returndates" object="${loneequipment}" z="OHTu8NQhTZc8guW4nOBUNO8NE1s="/>
+    </page:show>
+</div>
