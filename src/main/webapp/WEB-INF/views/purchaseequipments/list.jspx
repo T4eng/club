@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_team13_club_domain_PurchaseEquipment" items="${purchaseequipments}" z="LmtXIzMlgf8kVP7jP976L8aFrlY=">
+        <table:table data="${purchaseequipments}" id="l_com_team13_club_domain_PurchaseEquipment" path="/purchaseequipments" z="j+2oCq/cKaHmPfpMbwfl79pyFGI=">
+            <table:column id="c_com_team13_club_domain_PurchaseEquipment_slipid" property="slipid" z="2bckvNfeIhwCfYKxF5htnjWw6pg="/>
+            <table:column id="c_com_team13_club_domain_PurchaseEquipment_members" property="members" z="SGHGWcGMDQnxRasc822DeGTMeYw="/>
+            <table:column id="c_com_team13_club_domain_PurchaseEquipment_equipmentList" property="equipmentList" z="2seLRWM4gBNFcHqtM5DrnwEnlao="/>
+            <table:column calendar="true" dateTimePattern="${purchaseEquipment_dates_date_format}" id="c_com_team13_club_domain_PurchaseEquipment_dates" property="dates" z="ioRbp9S8u6H7cQ6Jrfg1aMJ9RVI="/>
+        </table:table>
+    </page:list>
+</div>

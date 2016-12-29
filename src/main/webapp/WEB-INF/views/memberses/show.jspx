@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_team13_club_domain_Members" object="${members}" path="/memberses" z="/cCE85Xq1kNLTHXKaF9azKEJCAc=">
+        <field:display field="name" id="s_com_team13_club_domain_Members_Name" object="${members}" z="y/hk63lMj5J/pchMbVO/wfb9Bkc="/>
+        <field:display field="IDMember" id="s_com_team13_club_domain_Members_IDMember" object="${members}" z="I7mfNzVLn+Wj2IOPAim/zR4ywFU="/>
+        <field:display field="gender" id="s_com_team13_club_domain_Members_Gender" object="${members}" z="m7zR0UBFRvHJak2xJB9q6P4AYms="/>
+        <field:display field="age" id="s_com_team13_club_domain_Members_Age" object="${members}" z="R2LAiffrM4vgFe2bsHtfH4cbXm8="/>
+        <field:display field="major" id="s_com_team13_club_domain_Members_Major" object="${members}" z="i6mmdc1dq1Tu0Epo8iHBgi252P0="/>
+        <field:display field="club" id="s_com_team13_club_domain_Members_Club" object="${members}" z="0dGlpDaNIchby0Ib5D87iTw3Ko4="/>
+    </page:show>
+</div>
