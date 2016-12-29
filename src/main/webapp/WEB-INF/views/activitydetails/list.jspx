@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_mycompany_com_sut_domain_Activitydetail" items="${activitydetails}" z="19AZ4iaBJz2thkK7hkVd9AscG+8=">
+        <table:table data="${activitydetails}" id="l_mycompany_com_sut_domain_Activitydetail" path="/activitydetails" z="3TW25IO5lkSw548oSCD5ut0vH1U=">
+            <table:column id="c_mycompany_com_sut_domain_Activitydetail_Activity" property="activity" z="vrDH4RLTwGJLFyv094Zvr4tjMkk="/>
+            <table:column id="c_mycompany_com_sut_domain_Activitydetail_Detail" property="detail" z="bg8bF4rUxCyGhRLAOuMA2LaIBdE="/>
+            <table:column calendar="true" dateTimePattern="${activitydetail_datetimes_date_format}" id="c_mycompany_com_sut_domain_Activitydetail_DateTimes" property="dateTimes" z="dN5CDBdDMzx0efON9GNPuxzzygI="/>
+            <table:column id="c_mycompany_com_sut_domain_Activitydetail_Times" property="times" z="lBPcWQxExHwB5epWJCrLobBAeRg="/>
+            <table:column id="c_mycompany_com_sut_domain_Activitydetail_Budget" property="budget" z="cURO030WCcl02VReSBfDPhx7+kU="/>
+        </table:table>
+    </page:list>
+</div>
