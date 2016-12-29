@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_team13_club_domain_Loneequipment" items="${loneequipments}" z="+foeSo9Bxd/W5ZaJUd1iZ93m/sA=">
+        <table:table data="${loneequipments}" id="l_com_team13_club_domain_Loneequipment" path="/loneequipments" z="3muOqNHZApNubgM2FvCWwQh4KiU=">
+            <table:column id="c_com_team13_club_domain_Loneequipment_members" property="members" z="Y/E4ggtUY0PqMDnd0JwaVBXbP7M="/>
+            <table:column id="c_com_team13_club_domain_Loneequipment_Equiment" property="equiment" z="MxWehAMmzUC33YqJ7M0nweB5S8Y="/>
+            <table:column id="c_com_team13_club_domain_Loneequipment_amount" property="amount" z="L6puYHIvoxZulgYpEskMvyXa8JQ="/>
+            <table:column date="true" dateTimePattern="${loneequipment_dates_date_format}" id="c_com_team13_club_domain_Loneequipment_dates" property="dates" z="V9gWNLSgyJujuTgASt3z++eNPng="/>
+            <table:column date="true" dateTimePattern="${loneequipment_returndates_date_format}" id="c_com_team13_club_domain_Loneequipment_returndates" property="returndates" z="fsEUfR/FiQMeFVgjX917gXASa7s="/>
+        </table:table>
+    </page:list>
+</div>

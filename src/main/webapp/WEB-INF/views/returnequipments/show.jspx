@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_team13_club_domain_Returnequipment" object="${returnequipment}" path="/returnequipments" z="KXU9dHPiFrNbs9xbLHxokNkZCG4=">
+        <field:display field="members" id="s_com_team13_club_domain_Returnequipment_members" object="${returnequipment}" z="8F1KeOzEaL8a5owvb+geSNp2czc="/>
+        <field:display field="equipmentreturn" id="s_com_team13_club_domain_Returnequipment_Equipmentreturn" object="${returnequipment}" z="Ysg8uam3B05Ed97oUF0ENruJMcQ="/>
+        <field:display field="amount" id="s_com_team13_club_domain_Returnequipment_amount" object="${returnequipment}" z="cjifuUZtd7RjyuIig0K9MHL9IeY="/>
+        <field:display date="true" dateTimePattern="${returnequipment_returneddates_date_format}" field="returneddates" id="s_com_team13_club_domain_Returnequipment_returneddates" object="${returnequipment}" z="2S5ZlE8fPPIhd6GBtDOM9PrNurM="/>
+    </page:show>
+</div>

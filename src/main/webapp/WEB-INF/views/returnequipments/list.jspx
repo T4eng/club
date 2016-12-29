@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_team13_club_domain_Returnequipment" items="${returnequipments}" z="zd1u/nG10wAvB+tGZI0nepI/5m4=">
+        <table:table data="${returnequipments}" id="l_com_team13_club_domain_Returnequipment" path="/returnequipments" z="b+GcjRbuDDdMjP3x+4sve2KfBl4=">
+            <table:column id="c_com_team13_club_domain_Returnequipment_members" property="members" z="gDwWIYttQq6ATE6drCGh0gxthtk="/>
+            <table:column id="c_com_team13_club_domain_Returnequipment_Equipmentreturn" property="equipmentreturn" z="Vk1+UOMk0+MR2ogwoJWoxq/rSiA="/>
+            <table:column id="c_com_team13_club_domain_Returnequipment_amount" property="amount" z="L0zX3mcm1pWKLKTjtjWFPV7/Xnc="/>
+            <table:column date="true" dateTimePattern="${returnequipment_returneddates_date_format}" id="c_com_team13_club_domain_Returnequipment_returneddates" property="returneddates" z="5HNAfsSz8xZibmYNQkgOP/zQrRc="/>
+        </table:table>
+    </page:list>
+</div>
