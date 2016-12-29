@@ -48,5 +48,17 @@
             <menu:item id="i_shirtformat_new" messageCode="global_menu_new" url="/shirtformats?form" z="9+y1quuIh+oTIjIC1VZ2gv2UsI4="/>
             <menu:item id="i_shirtformat_list" messageCode="global_menu_list" url="/shirtformats?page=1&amp;size=${empty param.size ? 10 : param.size}" z="6Bn9iOXToUoFYu1a24qDdWZ13f0="/>
         </menu:category>
+        <menu:category id="c_clubtype" z="HtmiJUPYglcweE59G1hYvKL2Pq0=">
+            <menu:item id="i_clubtype_new" messageCode="global_menu_new" url="/clubtypes?form" z="qaBYU7+DlIFepd3NPfxHR5w6a7w="/>
+            <menu:item id="i_clubtype_list" messageCode="global_menu_list" url="/clubtypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="TKMZEj/lmsHYoXB2ExaZyfpQ7KY="/>
+        </menu:category>
+        <menu:category id="c_club" z="ER+AH+WHQrQB9tnfETEeJ8wQ6Yo=">
+            <menu:item id="i_club_new" messageCode="global_menu_new" url="/clubs?form" z="agWYiqdA4EaGmWRv08W3oha6jYM="/>
+            <menu:item id="i_club_list" messageCode="global_menu_list" url="/clubs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nUDkLDOnt9Aw6z70dyxyv1SGj9U="/>
+        </menu:category>
+        <menu:category id="c_classify" z="BhEwUzk3b8DVFwKJhA1hYFOUSi8=">
+            <menu:item id="i_classify_new" messageCode="global_menu_new" url="/classifys?form" z="aJzRVMlqiY6N5qTRZEzzjiZ1vLk="/>
+            <menu:item id="i_classify_list" messageCode="global_menu_list" url="/classifys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="bhi5Iw3Q/liv3iAlTnQrdB0F9z4="/>
+        </menu:category>
     </menu:menu>
 </div>
