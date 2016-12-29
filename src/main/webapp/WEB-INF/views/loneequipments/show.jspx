@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_mycompany_com_sut_domain_Loneequipment" object="${loneequipment}" path="/loneequipments" z="T2P1ODYYJ39Eqz7zk9UX88gRaHU=">
+        <field:display field="equiment" id="s_mycompany_com_sut_domain_Loneequipment_Equiment" object="${loneequipment}" z="Y3EcXXEajQY2Co5fobBMlVHZ5fM="/>
+        <field:display field="amount" id="s_mycompany_com_sut_domain_Loneequipment_amount" object="${loneequipment}" z="kSr16yJmCSS3tsS+J/nb0IC3K08="/>
+        <field:display date="true" dateTimePattern="${loneequipment_dates_date_format}" field="dates" id="s_mycompany_com_sut_domain_Loneequipment_dates" object="${loneequipment}" z="3kAtqAjdd4sbEHGOvQZWjzM9ViI="/>
+        <field:display date="true" dateTimePattern="${loneequipment_returndates_date_format}" field="returndates" id="s_mycompany_com_sut_domain_Loneequipment_returndates" object="${loneequipment}" z="9vktHDh1gmTGe5VwJQeiwpcFbqI="/>
+    </page:show>
+</div>

@@ -16,5 +16,17 @@
             <menu:item id="i_members_new" messageCode="global_menu_new" url="/memberses?form" z="yUKriKj7Dfx2glt/YrzPlgssWfM="/>
             <menu:item id="i_members_list" messageCode="global_menu_list" url="/memberses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="SEyTkI0/SuExpXLuDMK0gk7uILk="/>
         </menu:category>
+        <menu:category id="c_loneequipment" z="zlv1C4PKlEG2F+vPcuK6AUQ9aUI=">
+            <menu:item id="i_loneequipment_new" messageCode="global_menu_new" url="/loneequipments?form" z="o55n61Nur9eE7a3OF7R/502XnKg="/>
+            <menu:item id="i_loneequipment_list" messageCode="global_menu_list" url="/loneequipments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nu6i+RQCzzN/jny/8172RmU/mPU="/>
+        </menu:category>
+        <menu:category id="c_equiment" z="NLINLRpD+JE6V4QSwi5YZW5l+xo=">
+            <menu:item id="i_equiment_new" messageCode="global_menu_new" url="/equiments?form" z="DUjLi6qGS/pbL8qzvob1GHHF9yY="/>
+            <menu:item id="i_equiment_list" messageCode="global_menu_list" url="/equiments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nUKQpIHzEQ2sQD/uiZhad0iY5Ao="/>
+        </menu:category>
+        <menu:category id="c_returnequipment" z="7DiTxCGYOiDjmGmXLLw3cTUseHA=">
+            <menu:item id="i_returnequipment_new" messageCode="global_menu_new" url="/returnequipments?form" z="LHlr8qcftQNiPgmmNg0zIsBi+bY="/>
+            <menu:item id="i_returnequipment_list" messageCode="global_menu_list" url="/returnequipments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="BItcEZdfbKpUmAWL+EzwZBT6FRY="/>
+        </menu:category>
     </menu:menu>
 </div>

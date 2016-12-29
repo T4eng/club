@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_mycompany_com_sut_domain_Loneequipment" items="${loneequipments}" z="awJA39wXEdx2x7va+qrRdnmdVxk=">
+        <table:table data="${loneequipments}" id="l_mycompany_com_sut_domain_Loneequipment" path="/loneequipments" z="/h1zuCg76muciyzRsg+Q0ITXGac=">
+            <table:column id="c_mycompany_com_sut_domain_Loneequipment_Equiment" property="equiment" z="STSFWbT8x842G3IKvw0GVtS9gdA="/>
+            <table:column id="c_mycompany_com_sut_domain_Loneequipment_amount" property="amount" z="pa/Z64XacMoJDNxsYfARRBhHms4="/>
+            <table:column date="true" dateTimePattern="${loneequipment_dates_date_format}" id="c_mycompany_com_sut_domain_Loneequipment_dates" property="dates" z="+Wj6PD7PiVMmHwoNVf/7YHFW7rg="/>
+            <table:column date="true" dateTimePattern="${loneequipment_returndates_date_format}" id="c_mycompany_com_sut_domain_Loneequipment_returndates" property="returndates" z="hBSFolOdkRl5jUCy+/isbWGs1YM="/>
+        </table:table>
+    </page:list>
+</div>
