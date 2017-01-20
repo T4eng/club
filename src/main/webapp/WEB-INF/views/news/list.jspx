@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_team13_club_domain_News" items="${newsitems}" z="THhGvuescQsgQeQPPhAwlsB/S/w=">
+        <table:table data="${newsitems}" id="l_com_team13_club_domain_News" path="/news" z="51dV8BZlIre2DLmDnmuTN7Ln/Qc=">
+            <table:column id="c_com_team13_club_domain_News_Title" property="title" z="I86b0Dk1aMv9rtCdH3iBdzbGMtE="/>
+            <table:column id="c_com_team13_club_domain_News_Description" property="description" z="i/SPUlWTyJ51W/H2jpcdRxEoqNc="/>
+            <table:column calendar="true" dateTimePattern="${news_datetimes_date_format}" id="c_com_team13_club_domain_News_DateTimes" property="dateTimes" z="dGMeZ35F/n5D4IlZTv0q1AzpJBU="/>
+            <table:column id="c_com_team13_club_domain_News_Times" property="times" z="gEVTrND28y9ctNPE6USbl6rPReM="/>
+            <table:column id="c_com_team13_club_domain_News_Officer" property="officer" z="HQxtbBxJTE1hzdcyqA56pFwFNag="/>
+        </table:table>
+    </page:list>
+</div>

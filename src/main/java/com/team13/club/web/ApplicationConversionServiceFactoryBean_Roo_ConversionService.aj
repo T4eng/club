@@ -15,12 +15,15 @@ import com.team13.club.domain.Major;
 import com.team13.club.domain.MeetingRoom;
 import com.team13.club.domain.Members;
 import com.team13.club.domain.Monitoringequipment;
+import com.team13.club.domain.News;
+import com.team13.club.domain.Officer;
 import com.team13.club.domain.OpenNewClub;
 import com.team13.club.domain.Ordershirt;
 import com.team13.club.domain.PurchaseEquipment;
 import com.team13.club.domain.Registeractivity;
 import com.team13.club.domain.Returnequipment;
 import com.team13.club.domain.Shirtformat;
+import com.team13.club.domain.Title;
 import com.team13.club.web.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.core.convert.converter.Converter;
@@ -318,6 +321,54 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<News, String> ApplicationConversionServiceFactoryBean.getNewsToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.News, java.lang.String>() {
+            public String convert(News news) {
+                return new StringBuilder().append(news.getDescription()).append(' ').append(news.getDateTimes()).append(' ').append(news.getTimes()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, News> ApplicationConversionServiceFactoryBean.getIdToNewsConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.team13.club.domain.News>() {
+            public com.team13.club.domain.News convert(java.lang.Long id) {
+                return News.findNews(id);
+            }
+        };
+    }
+    
+    public Converter<String, News> ApplicationConversionServiceFactoryBean.getStringToNewsConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.team13.club.domain.News>() {
+            public com.team13.club.domain.News convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), News.class);
+            }
+        };
+    }
+    
+    public Converter<Officer, String> ApplicationConversionServiceFactoryBean.getOfficerToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.Officer, java.lang.String>() {
+            public String convert(Officer officer) {
+                return new StringBuilder().append(officer.getName()).append(' ').append(officer.getRoles()).append(' ').append(officer.getOfficerid()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Officer> ApplicationConversionServiceFactoryBean.getIdToOfficerConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.team13.club.domain.Officer>() {
+            public com.team13.club.domain.Officer convert(java.lang.Long id) {
+                return Officer.findOfficer(id);
+            }
+        };
+    }
+    
+    public Converter<String, Officer> ApplicationConversionServiceFactoryBean.getStringToOfficerConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.team13.club.domain.Officer>() {
+            public com.team13.club.domain.Officer convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Officer.class);
+            }
+        };
+    }
+    
     public Converter<OpenNewClub, String> ApplicationConversionServiceFactoryBean.getOpenNewClubToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.OpenNewClub, java.lang.String>() {
             public String convert(OpenNewClub openNewClub) {
@@ -462,6 +513,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<Title, String> ApplicationConversionServiceFactoryBean.getTitleToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.Title, java.lang.String>() {
+            public String convert(Title title) {
+                return new StringBuilder().append(title.getName()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Title> ApplicationConversionServiceFactoryBean.getIdToTitleConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.team13.club.domain.Title>() {
+            public com.team13.club.domain.Title convert(java.lang.Long id) {
+                return Title.findTitle(id);
+            }
+        };
+    }
+    
+    public Converter<String, Title> ApplicationConversionServiceFactoryBean.getStringToTitleConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.team13.club.domain.Title>() {
+            public com.team13.club.domain.Title convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Title.class);
+            }
+        };
+    }
+    
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
         registry.addConverter(getActivityToStringConverter());
         registry.addConverter(getIdToActivityConverter());
@@ -499,6 +574,12 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getMonitoringequipmentToStringConverter());
         registry.addConverter(getIdToMonitoringequipmentConverter());
         registry.addConverter(getStringToMonitoringequipmentConverter());
+        registry.addConverter(getNewsToStringConverter());
+        registry.addConverter(getIdToNewsConverter());
+        registry.addConverter(getStringToNewsConverter());
+        registry.addConverter(getOfficerToStringConverter());
+        registry.addConverter(getIdToOfficerConverter());
+        registry.addConverter(getStringToOfficerConverter());
         registry.addConverter(getOpenNewClubToStringConverter());
         registry.addConverter(getIdToOpenNewClubConverter());
         registry.addConverter(getStringToOpenNewClubConverter());
@@ -517,6 +598,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getShirtformatToStringConverter());
         registry.addConverter(getIdToShirtformatConverter());
         registry.addConverter(getStringToShirtformatConverter());
+        registry.addConverter(getTitleToStringConverter());
+        registry.addConverter(getIdToTitleConverter());
+        registry.addConverter(getStringToTitleConverter());
     }
     
     public void ApplicationConversionServiceFactoryBean.afterPropertiesSet() {

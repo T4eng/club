@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_team13_club_domain_News" object="${news}" path="/news" z="E5K/JDR8ro55bfVlyoCZwFbmmWY=">
+        <field:display field="title" id="s_com_team13_club_domain_News_Title" object="${news}" z="EI+HKjh1Fc82qqZr1k5lP8bYAds="/>
+        <field:display field="description" id="s_com_team13_club_domain_News_Description" object="${news}" z="bUpxk4IXByMGDdJdP9OIs7guPvU="/>
+        <field:display calendar="true" dateTimePattern="${news_datetimes_date_format}" field="dateTimes" id="s_com_team13_club_domain_News_DateTimes" object="${news}" z="n7aLsn3fPiqRDkrVwqihkvKeDBE="/>
+        <field:display field="times" id="s_com_team13_club_domain_News_Times" object="${news}" z="FlNbpFhZ7i/YmOKWxja7Eo5m3yc="/>
+        <field:display field="officer" id="s_com_team13_club_domain_News_Officer" object="${news}" z="lS9DfXKhyLnHhTVpITmMz2BoAmE="/>
+    </page:show>
+</div>
