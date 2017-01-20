@@ -12,6 +12,7 @@ import com.team13.club.domain.Equiment;
 import com.team13.club.domain.EquipmentList;
 import com.team13.club.domain.Loneequipment;
 import com.team13.club.domain.Major;
+import com.team13.club.domain.MeetingRoom;
 import com.team13.club.domain.Members;
 import com.team13.club.domain.Monitoringequipment;
 import com.team13.club.domain.OpenNewClub;
@@ -245,6 +246,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<MeetingRoom, String> ApplicationConversionServiceFactoryBean.getMeetingRoomToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.MeetingRoom, java.lang.String>() {
+            public String convert(MeetingRoom meetingRoom) {
+                return new StringBuilder().append(meetingRoom.getRoomID()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, MeetingRoom> ApplicationConversionServiceFactoryBean.getIdToMeetingRoomConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.team13.club.domain.MeetingRoom>() {
+            public com.team13.club.domain.MeetingRoom convert(java.lang.Long id) {
+                return MeetingRoom.findMeetingRoom(id);
+            }
+        };
+    }
+    
+    public Converter<String, MeetingRoom> ApplicationConversionServiceFactoryBean.getStringToMeetingRoomConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.team13.club.domain.MeetingRoom>() {
+            public com.team13.club.domain.MeetingRoom convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), MeetingRoom.class);
+            }
+        };
+    }
+    
     public Converter<Members, String> ApplicationConversionServiceFactoryBean.getMembersToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.Members, java.lang.String>() {
             public String convert(Members members) {
@@ -465,6 +490,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getMajorToStringConverter());
         registry.addConverter(getIdToMajorConverter());
         registry.addConverter(getStringToMajorConverter());
+        registry.addConverter(getMeetingRoomToStringConverter());
+        registry.addConverter(getIdToMeetingRoomConverter());
+        registry.addConverter(getStringToMeetingRoomConverter());
         registry.addConverter(getMembersToStringConverter());
         registry.addConverter(getIdToMembersConverter());
         registry.addConverter(getStringToMembersConverter());

@@ -72,5 +72,9 @@
             <menu:item id="i_monitoringequipment_new" messageCode="global_menu_new" url="/monitoringequipments?form" z="YXdhMRFulK0F8EudFo1a+X76N8w="/>
             <menu:item id="i_monitoringequipment_list" messageCode="global_menu_list" url="/monitoringequipments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/Fi0kpWlcc4lLkpR8T8tSFAdqaw="/>
         </menu:category>
+        <menu:category id="c_meetingroom" z="jYBeKB9/V+85UWsmNARtTrEOVIc=">
+            <menu:item id="i_meetingroom_new" messageCode="global_menu_new" url="/meetingrooms?form" z="9QujRzfT7Bn7nyksZ7RdSTGve9U="/>
+            <menu:item id="i_meetingroom_list" messageCode="global_menu_list" url="/meetingrooms?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ECWbsvSuaPWJ0uMUb8NBzkcW1gc="/>
+        </menu:category>
     </menu:menu>
 </div>

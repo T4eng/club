@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_team13_club_domain_MeetingRoom" items="${meetingrooms}" z="D8GqwPIgR2Psb3qTLkoLdwRnxao=">
+        <table:table data="${meetingrooms}" id="l_com_team13_club_domain_MeetingRoom" path="/meetingrooms" z="lZWi3gA3nkQ996d1G1RGZ+bEBso=">
+            <table:column id="c_com_team13_club_domain_MeetingRoom_RoomID" property="roomID" z="WfxjTMYAM/eJerpzUMyh/Wg68oc="/>
+            <table:column id="c_com_team13_club_domain_MeetingRoom_RoomSize" property="roomSize" z="1mS0YK7eVUrcD4XJQV7ZLRX2zrg="/>
+            <table:column id="c_com_team13_club_domain_MeetingRoom_ClubMeeting" property="clubMeeting" z="Y3BtUebDSctkXPygucFMMfy0UVA="/>
+        </table:table>
+    </page:list>
+</div>
