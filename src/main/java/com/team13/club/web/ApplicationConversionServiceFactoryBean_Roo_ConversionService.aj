@@ -5,6 +5,8 @@ package com.team13.club.web;
 
 import com.team13.club.domain.Activity;
 import com.team13.club.domain.Activitydetail;
+import com.team13.club.domain.BudgetClub;
+import com.team13.club.domain.Budgeting;
 import com.team13.club.domain.Classify;
 import com.team13.club.domain.Club;
 import com.team13.club.domain.ClubType;
@@ -77,6 +79,54 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         return new org.springframework.core.convert.converter.Converter<java.lang.String, com.team13.club.domain.Activitydetail>() {
             public com.team13.club.domain.Activitydetail convert(String id) {
                 return getObject().convert(getObject().convert(id, Long.class), Activitydetail.class);
+            }
+        };
+    }
+    
+    public Converter<BudgetClub, String> ApplicationConversionServiceFactoryBean.getBudgetClubToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.BudgetClub, java.lang.String>() {
+            public String convert(BudgetClub budgetClub) {
+                return new StringBuilder().append(budgetClub.getBClub()).append(' ').append(budgetClub.getPrice()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, BudgetClub> ApplicationConversionServiceFactoryBean.getIdToBudgetClubConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.team13.club.domain.BudgetClub>() {
+            public com.team13.club.domain.BudgetClub convert(java.lang.Long id) {
+                return BudgetClub.findBudgetClub(id);
+            }
+        };
+    }
+    
+    public Converter<String, BudgetClub> ApplicationConversionServiceFactoryBean.getStringToBudgetClubConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.team13.club.domain.BudgetClub>() {
+            public com.team13.club.domain.BudgetClub convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), BudgetClub.class);
+            }
+        };
+    }
+    
+    public Converter<Budgeting, String> ApplicationConversionServiceFactoryBean.getBudgetingToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.Budgeting, java.lang.String>() {
+            public String convert(Budgeting budgeting) {
+                return new StringBuilder().append(budgeting.getDates()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Budgeting> ApplicationConversionServiceFactoryBean.getIdToBudgetingConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.team13.club.domain.Budgeting>() {
+            public com.team13.club.domain.Budgeting convert(java.lang.Long id) {
+                return Budgeting.findBudgeting(id);
+            }
+        };
+    }
+    
+    public Converter<String, Budgeting> ApplicationConversionServiceFactoryBean.getStringToBudgetingConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.team13.club.domain.Budgeting>() {
+            public com.team13.club.domain.Budgeting convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Budgeting.class);
             }
         };
     }
@@ -544,6 +594,12 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getActivitydetailToStringConverter());
         registry.addConverter(getIdToActivitydetailConverter());
         registry.addConverter(getStringToActivitydetailConverter());
+        registry.addConverter(getBudgetClubToStringConverter());
+        registry.addConverter(getIdToBudgetClubConverter());
+        registry.addConverter(getStringToBudgetClubConverter());
+        registry.addConverter(getBudgetingToStringConverter());
+        registry.addConverter(getIdToBudgetingConverter());
+        registry.addConverter(getStringToBudgetingConverter());
         registry.addConverter(getClassifyToStringConverter());
         registry.addConverter(getIdToClassifyConverter());
         registry.addConverter(getStringToClassifyConverter());

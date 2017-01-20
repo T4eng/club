@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_team13_club_domain_Budgeting" items="${budgetings}" z="zZOWvFx4TDdrHzQFIG/g7oKTEGU=">
+        <table:table data="${budgetings}" id="l_com_team13_club_domain_Budgeting" path="/budgetings" z="H5BZ9QTG4iKlz+Ff3ol62SifVOs=">
+            <table:column id="c_com_team13_club_domain_Budgeting_officer" property="officer" z="+sX2RKfwCbhkOb6kNDjMIsaV//E="/>
+            <table:column id="c_com_team13_club_domain_Budgeting_budgetClub" property="budgetClub" z="Yjo3jFKt6ylp3ziunpGCRN4ngUY="/>
+            <table:column id="c_com_team13_club_domain_Budgeting_Assessment" property="assessment" z="uNCwMugagF/jWM5fk/Bf5mxYuM8="/>
+            <table:column calendar="true" dateTimePattern="${budgeting_dates_date_format}" id="c_com_team13_club_domain_Budgeting_dates" property="dates" z="mMybfqKLF+pVQ6ylm6OgK8X0Y0o="/>
+        </table:table>
+    </page:list>
+</div>

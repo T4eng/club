@@ -88,5 +88,13 @@
             <menu:item id="i_title_new" messageCode="global_menu_new" url="/titles?form" z="Se/Sj2IvKhH2jzR7xhtMlnmvE4A="/>
             <menu:item id="i_title_list" messageCode="global_menu_list" url="/titles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="u3F7E/L7KE2aU7+hhBtV20hHwx8="/>
         </menu:category>
+        <menu:category id="c_budgeting" z="HozERnSNEB48Jx4wex4qSK1z27U=">
+            <menu:item id="i_budgeting_new" messageCode="global_menu_new" url="/budgetings?form" z="mLBJOvYUhVTCg2a4sIx4KwxANs4="/>
+            <menu:item id="i_budgeting_list" messageCode="global_menu_list" url="/budgetings?page=1&amp;size=${empty param.size ? 10 : param.size}" z="p5uBOrOYUmyHi+5KDuAo9kbz8Ew="/>
+        </menu:category>
+        <menu:category id="c_budgetclub" z="Z46gxukmW2HErTX9UtDb7usvsHk=">
+            <menu:item id="i_budgetclub_new" messageCode="global_menu_new" url="/budgetclubs?form" z="Csinu/IrDLR4roavQxAkY/2TNPo="/>
+            <menu:item id="i_budgetclub_list" messageCode="global_menu_list" url="/budgetclubs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="V6ev86k/SmgkW8wO4tZ4VbcF+i0="/>
+        </menu:category>
     </menu:menu>
 </div>

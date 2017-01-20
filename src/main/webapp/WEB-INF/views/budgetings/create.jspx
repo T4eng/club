@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_team13_club_domain_Budgeting" modelAttribute="budgeting" path="/budgetings" render="${empty dependencies}" z="H88k2ofY+oQQNQoPdB5Pw8uNjeM=">
+        <field:select field="officer" id="c_com_team13_club_domain_Budgeting_officer" itemValue="id" items="${officers}" path="/officers" z="use0Lo+m13kMU8+D8vGo5JYMXVY="/>
+        <field:select field="budgetClub" id="c_com_team13_club_domain_Budgeting_budgetClub" itemValue="id" items="${budgetclubs}" path="/budgetclubs" z="Dxhjav9yuTLu5j7UW/1mLNjIRL0="/>
+        <field:select field="Assessment" id="c_com_team13_club_domain_Budgeting_Assessment" items="${tas}" path="tas" z="6jxbKtGMQ7pB9NEfASemILk/jKM="/>
+        <field:datetime dateTimePattern="${budgeting_dates_date_format}" field="dates" id="c_com_team13_club_domain_Budgeting_dates" z="47tEct2qfglfGaM1qkicP3CD1ak="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_team13_club_domain_Budgeting" render="${not empty dependencies}" z="avcnkbXUPD+CGtYsvAnkoJfRyvg="/>
+</div>
