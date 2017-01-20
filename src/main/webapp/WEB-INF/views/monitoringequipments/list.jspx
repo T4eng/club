@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_team13_club_domain_Monitoringequipment" items="${monitoringequipments}" z="52z9SpSA4sErlhUpM0m0euPvhm4=">
+        <table:table data="${monitoringequipments}" id="l_com_team13_club_domain_Monitoringequipment" path="/monitoringequipments" z="vhUGOu/iDt1LUVsOyZc5sMBdcSs=">
+            <table:column id="c_com_team13_club_domain_Monitoringequipment_equipment" property="equipment" z="94QkJ01cSzlugl5rhQVvOlTbREE="/>
+            <table:column id="c_com_team13_club_domain_Monitoringequipment_status" property="status" z="Lwzh5ZW1LEdt8SHppAjBex4B8g0="/>
+            <table:column id="c_com_team13_club_domain_Monitoringequipment_datail" property="datail" z="HXjhHXHpSUHC988MIfEHiOplwOk="/>
+        </table:table>
+    </page:list>
+</div>
