@@ -13,6 +13,7 @@ import com.team13.club.domain.EquipmentList;
 import com.team13.club.domain.Loneequipment;
 import com.team13.club.domain.Major;
 import com.team13.club.domain.Members;
+import com.team13.club.domain.OpenNewClub;
 import com.team13.club.domain.Ordershirt;
 import com.team13.club.domain.PurchaseEquipment;
 import com.team13.club.domain.Registeractivity;
@@ -267,6 +268,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<OpenNewClub, String> ApplicationConversionServiceFactoryBean.getOpenNewClubToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.OpenNewClub, java.lang.String>() {
+            public String convert(OpenNewClub openNewClub) {
+                return new StringBuilder().append(openNewClub.getNewClubname()).append(' ').append(openNewClub.getOpenDate()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, OpenNewClub> ApplicationConversionServiceFactoryBean.getIdToOpenNewClubConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.team13.club.domain.OpenNewClub>() {
+            public com.team13.club.domain.OpenNewClub convert(java.lang.Long id) {
+                return OpenNewClub.findOpenNewClub(id);
+            }
+        };
+    }
+    
+    public Converter<String, OpenNewClub> ApplicationConversionServiceFactoryBean.getStringToOpenNewClubConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.team13.club.domain.OpenNewClub>() {
+            public com.team13.club.domain.OpenNewClub convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), OpenNewClub.class);
+            }
+        };
+    }
+    
     public Converter<Ordershirt, String> ApplicationConversionServiceFactoryBean.getOrdershirtToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.Ordershirt, java.lang.String>() {
             public String convert(Ordershirt ordershirt) {
@@ -418,6 +443,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getMembersToStringConverter());
         registry.addConverter(getIdToMembersConverter());
         registry.addConverter(getStringToMembersConverter());
+        registry.addConverter(getOpenNewClubToStringConverter());
+        registry.addConverter(getIdToOpenNewClubConverter());
+        registry.addConverter(getStringToOpenNewClubConverter());
         registry.addConverter(getOrdershirtToStringConverter());
         registry.addConverter(getIdToOrdershirtConverter());
         registry.addConverter(getStringToOrdershirtConverter());
