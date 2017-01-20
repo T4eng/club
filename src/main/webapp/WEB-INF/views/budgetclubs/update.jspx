@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_team13_club_domain_BudgetClub" modelAttribute="budgetClub" path="/budgetclubs" versionField="Version" z="9PzKGOMZkQ9xfwAw55ZpeSBhlZk=">
+        <field:input field="bClub" id="c_com_team13_club_domain_BudgetClub_bClub" required="true" z="g+4s5HNhEdwkTWzvxeoBix5wIsI="/>
+        <field:input field="price" id="c_com_team13_club_domain_BudgetClub_price" validationMessageCode="field_invalid_number" z="E0Wmc52tcUOXOpJJqUpWuzjDb/s="/>
+    </form:update>
+</div>

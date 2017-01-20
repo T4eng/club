@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_team13_club_domain_Budgeting" object="${budgeting}" path="/budgetings" z="Jk3Xfms2Z88llNnSz8ThG2wi6s8=">
+        <field:display field="officer" id="s_com_team13_club_domain_Budgeting_officer" object="${budgeting}" z="XcVHDchgO2jV73H7rDJregiATuI="/>
+        <field:display field="budgetClub" id="s_com_team13_club_domain_Budgeting_budgetClub" object="${budgeting}" z="vwSM3AwJoU+/I0KSQ+5mAmxUDdA="/>
+        <field:display field="assessment" id="s_com_team13_club_domain_Budgeting_Assessment" object="${budgeting}" z="9mHNRINiRj6PtVHlrxEAcv0V2s8="/>
+        <field:display calendar="true" dateTimePattern="${budgeting_dates_date_format}" field="dates" id="s_com_team13_club_domain_Budgeting_dates" object="${budgeting}" z="IKwTeR+0+oAWxEjsyfW5C6IcFy8="/>
+    </page:show>
+</div>
