@@ -68,5 +68,9 @@
             <menu:item id="i_opennewclub_new" messageCode="global_menu_new" url="/opennewclubs?form" z="dkqOPbSpeSieAaE093Zw1ReUBq4="/>
             <menu:item id="i_opennewclub_list" messageCode="global_menu_list" url="/opennewclubs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kKYEhGw8JMgwBaZ1U6S8lziwhIY="/>
         </menu:category>
+        <menu:category id="c_monitoringequipment" z="tA+DTOBqWQs30aNcyInzDRng1u8=">
+            <menu:item id="i_monitoringequipment_new" messageCode="global_menu_new" url="/monitoringequipments?form" z="YXdhMRFulK0F8EudFo1a+X76N8w="/>
+            <menu:item id="i_monitoringequipment_list" messageCode="global_menu_list" url="/monitoringequipments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/Fi0kpWlcc4lLkpR8T8tSFAdqaw="/>
+        </menu:category>
     </menu:menu>
 </div>

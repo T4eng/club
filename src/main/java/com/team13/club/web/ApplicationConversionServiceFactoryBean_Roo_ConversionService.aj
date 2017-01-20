@@ -13,6 +13,7 @@ import com.team13.club.domain.EquipmentList;
 import com.team13.club.domain.Loneequipment;
 import com.team13.club.domain.Major;
 import com.team13.club.domain.Members;
+import com.team13.club.domain.Monitoringequipment;
 import com.team13.club.domain.OpenNewClub;
 import com.team13.club.domain.Ordershirt;
 import com.team13.club.domain.PurchaseEquipment;
@@ -268,6 +269,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<Monitoringequipment, String> ApplicationConversionServiceFactoryBean.getMonitoringequipmentToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.Monitoringequipment, java.lang.String>() {
+            public String convert(Monitoringequipment monitoringequipment) {
+                return new StringBuilder().append(monitoringequipment.getDatail()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Monitoringequipment> ApplicationConversionServiceFactoryBean.getIdToMonitoringequipmentConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.team13.club.domain.Monitoringequipment>() {
+            public com.team13.club.domain.Monitoringequipment convert(java.lang.Long id) {
+                return Monitoringequipment.findMonitoringequipment(id);
+            }
+        };
+    }
+    
+    public Converter<String, Monitoringequipment> ApplicationConversionServiceFactoryBean.getStringToMonitoringequipmentConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.team13.club.domain.Monitoringequipment>() {
+            public com.team13.club.domain.Monitoringequipment convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Monitoringequipment.class);
+            }
+        };
+    }
+    
     public Converter<OpenNewClub, String> ApplicationConversionServiceFactoryBean.getOpenNewClubToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.OpenNewClub, java.lang.String>() {
             public String convert(OpenNewClub openNewClub) {
@@ -443,6 +468,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getMembersToStringConverter());
         registry.addConverter(getIdToMembersConverter());
         registry.addConverter(getStringToMembersConverter());
+        registry.addConverter(getMonitoringequipmentToStringConverter());
+        registry.addConverter(getIdToMonitoringequipmentConverter());
+        registry.addConverter(getStringToMonitoringequipmentConverter());
         registry.addConverter(getOpenNewClubToStringConverter());
         registry.addConverter(getIdToOpenNewClubConverter());
         registry.addConverter(getStringToOpenNewClubConverter());
