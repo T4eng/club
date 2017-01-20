@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_team13_club_domain_Finance" items="${finances}" z="Jg/vSH9davt0DJ462/K5/NkqN9k=">
+        <table:table data="${finances}" id="l_com_team13_club_domain_Finance" path="/finances" z="iulDUiEiskcIh7c36pk1EAFfTAo=">
+            <table:column calendar="true" dateTimePattern="${finance_dates_date_format}" id="c_com_team13_club_domain_Finance_dates" property="dates" z="abWdm7abddCY9cBTkzVq30JbqN0="/>
+            <table:column id="c_com_team13_club_domain_Finance_income" property="income" z="RRPf0lITJniWyrYJ2xM1K5Ko7XM="/>
+            <table:column id="c_com_team13_club_domain_Finance_expense" property="expense" z="lfJ3P/Am2CP4Zt8PgZWsd83a94o="/>
+        </table:table>
+    </page:list>
+</div>
