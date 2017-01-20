@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_team13_club_domain_Finance" object="${finance}" path="/finances" z="6HbfKtfetFo3jCjblkA08iX502o=">
+        <field:display calendar="true" dateTimePattern="${finance_dates_date_format}" field="dates" id="s_com_team13_club_domain_Finance_dates" object="${finance}" z="KZEC3TPS/q+/dJU9H3iQJxWEJXI="/>
+        <field:display field="income" id="s_com_team13_club_domain_Finance_income" object="${finance}" z="TA9y0NXA4d6G2slNiJbKJKvw97k="/>
+        <field:display field="expense" id="s_com_team13_club_domain_Finance_expense" object="${finance}" z="hDvu7UsqVVC4SDRjlW7f9+g761E="/>
+    </page:show>
+</div>

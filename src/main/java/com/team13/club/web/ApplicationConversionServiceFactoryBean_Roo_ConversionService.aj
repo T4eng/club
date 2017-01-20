@@ -12,6 +12,7 @@ import com.team13.club.domain.Club;
 import com.team13.club.domain.ClubType;
 import com.team13.club.domain.Equiment;
 import com.team13.club.domain.EquipmentList;
+import com.team13.club.domain.Finance;
 import com.team13.club.domain.Loneequipment;
 import com.team13.club.domain.Major;
 import com.team13.club.domain.MeetingRoom;
@@ -247,6 +248,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         return new org.springframework.core.convert.converter.Converter<java.lang.String, com.team13.club.domain.EquipmentList>() {
             public com.team13.club.domain.EquipmentList convert(String id) {
                 return getObject().convert(getObject().convert(id, Long.class), EquipmentList.class);
+            }
+        };
+    }
+    
+    public Converter<Finance, String> ApplicationConversionServiceFactoryBean.getFinanceToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.team13.club.domain.Finance, java.lang.String>() {
+            public String convert(Finance finance) {
+                return new StringBuilder().append(finance.getDates()).append(' ').append(finance.getIncome()).append(' ').append(finance.getExpense()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Finance> ApplicationConversionServiceFactoryBean.getIdToFinanceConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.team13.club.domain.Finance>() {
+            public com.team13.club.domain.Finance convert(java.lang.Long id) {
+                return Finance.findFinance(id);
+            }
+        };
+    }
+    
+    public Converter<String, Finance> ApplicationConversionServiceFactoryBean.getStringToFinanceConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.team13.club.domain.Finance>() {
+            public com.team13.club.domain.Finance convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Finance.class);
             }
         };
     }
@@ -615,6 +640,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getEquipmentListToStringConverter());
         registry.addConverter(getIdToEquipmentListConverter());
         registry.addConverter(getStringToEquipmentListConverter());
+        registry.addConverter(getFinanceToStringConverter());
+        registry.addConverter(getIdToFinanceConverter());
+        registry.addConverter(getStringToFinanceConverter());
         registry.addConverter(getLoneequipmentToStringConverter());
         registry.addConverter(getIdToLoneequipmentConverter());
         registry.addConverter(getStringToLoneequipmentConverter());

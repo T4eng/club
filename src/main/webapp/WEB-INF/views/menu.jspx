@@ -96,5 +96,9 @@
             <menu:item id="i_budgetclub_new" messageCode="global_menu_new" url="/budgetclubs?form" z="Csinu/IrDLR4roavQxAkY/2TNPo="/>
             <menu:item id="i_budgetclub_list" messageCode="global_menu_list" url="/budgetclubs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="V6ev86k/SmgkW8wO4tZ4VbcF+i0="/>
         </menu:category>
+        <menu:category id="c_finance" z="Cs9qG36S2GL9J7haursbLv7+RIo=">
+            <menu:item id="i_finance_new" messageCode="global_menu_new" url="/finances?form" z="RHCXbRY+YUOzmhmMp/dq1EOMZkg="/>
+            <menu:item id="i_finance_list" messageCode="global_menu_list" url="/finances?page=1&amp;size=${empty param.size ? 10 : param.size}" z="SMyOPHi/A3uAVpsBO06pPzHfMY4="/>
+        </menu:category>
     </menu:menu>
 </div>
