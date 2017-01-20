@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_team13_club_domain_Officer" modelAttribute="officer" path="/officers" versionField="Version" z="AtRxj6A2OnMtFccJkGA8MdK6YfI=">
+        <field:input field="Name" id="c_com_team13_club_domain_Officer_Name" required="true" z="v8jas+MHL7V6/HGcwUroWE44Je8="/>
+        <field:input field="Roles" id="c_com_team13_club_domain_Officer_Roles" z="1VqHqqcirMapQb867iSI01r/mig="/>
+        <field:input field="Officerid" id="c_com_team13_club_domain_Officer_Officerid" min="2" required="true" z="I95odaEOfDfpD//FQJXZKiyZo9w="/>
+    </form:update>
+</div>

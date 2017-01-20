@@ -76,5 +76,17 @@
             <menu:item id="i_meetingroom_new" messageCode="global_menu_new" url="/meetingrooms?form" z="9QujRzfT7Bn7nyksZ7RdSTGve9U="/>
             <menu:item id="i_meetingroom_list" messageCode="global_menu_list" url="/meetingrooms?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ECWbsvSuaPWJ0uMUb8NBzkcW1gc="/>
         </menu:category>
+        <menu:category id="c_news" z="/GYP5OCuHDR51pEBl2hXSgh9Kzs=">
+            <menu:item id="i_news_new" messageCode="global_menu_new" url="/news?form" z="KKGmhlBtoqXdUbIsLPG2pR5jcbw="/>
+            <menu:item id="i_news_list" messageCode="global_menu_list" url="/news?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Z3jXJYPsEw3tWVe0eJEvD8n+vQg="/>
+        </menu:category>
+        <menu:category id="c_officer" z="CYx+20T56iprcFb/E4LN4hTamZU=">
+            <menu:item id="i_officer_new" messageCode="global_menu_new" url="/officers?form" z="ieUvRUgfQ/gVvf8b5DO4+34JvJc="/>
+            <menu:item id="i_officer_list" messageCode="global_menu_list" url="/officers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="PtDLDTANlf4hiw9Sk7sx00+vOWA="/>
+        </menu:category>
+        <menu:category id="c_title" z="uqwQUwoQbIJDzpgSKPbQ5tSZ4og=">
+            <menu:item id="i_title_new" messageCode="global_menu_new" url="/titles?form" z="Se/Sj2IvKhH2jzR7xhtMlnmvE4A="/>
+            <menu:item id="i_title_list" messageCode="global_menu_list" url="/titles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="u3F7E/L7KE2aU7+hhBtV20hHwx8="/>
+        </menu:category>
     </menu:menu>
 </div>
