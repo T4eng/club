@@ -64,5 +64,9 @@
             <menu:item id="i_equiment_new" messageCode="global_menu_new" url="/equiments?form" z="DUjLi6qGS/pbL8qzvob1GHHF9yY="/>
             <menu:item id="i_equiment_list" messageCode="global_menu_list" url="/equiments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nUKQpIHzEQ2sQD/uiZhad0iY5Ao="/>
         </menu:category>
+        <menu:category id="c_opennewclub" z="y8aYzJBZLBHFDDZQ4doCayODV2k=">
+            <menu:item id="i_opennewclub_new" messageCode="global_menu_new" url="/opennewclubs?form" z="dkqOPbSpeSieAaE093Zw1ReUBq4="/>
+            <menu:item id="i_opennewclub_list" messageCode="global_menu_list" url="/opennewclubs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kKYEhGw8JMgwBaZ1U6S8lziwhIY="/>
+        </menu:category>
     </menu:menu>
 </div>
